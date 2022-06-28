@@ -1,0 +1,603 @@
+
+
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=1200px" />
+    <link href="/Frontend/dist/assets/Icons/favicon.ico" rel="shortcut icon" />
+    <title>Проверка женского здоровья за 2990 руб.</title>
+    <meta name="description" content="Лабораторная служба Хеликс выполняет медицинские анализы по международным стандартам. Это обеспечивает точность анализа и быстроту его выполнения.">
+    <meta name="Keywords" content="Хеликс, Лабораторная, служба, анализы, срочные анализы, медицинская, лабораторная, диагностика, общеклинические, биохимические, цитологические, микробиологические, генетические, Санкт-Петербург">
+
+    <link href='/Frontend/dist/css/desktop/main.e6f6062ddc639b205d18.css' rel='stylesheet'>
+    <script src='/Frontend/dist/js/main.f95d1098cf26f625f415.js'></script>
+
+    
+</head>
+<body>
+    <div style="display: flex; flex-direction: column; min-height: 100vh;">
+
+
+<div class="grid grid-column">
+  <div class="section scrollable-x-xs full-width">
+    <div class="section-content">
+      <div
+        class="row row-space-between row-nowrap row-y-center py-12 grid align-items-center justify-content-between"
+      >
+        <div class="row-item grid-item">
+          <div
+            class="row row-gutter-24 row-y-center grid grid-gutter-24 align-items-center"
+          >
+            <div class="row-item grid-item hidden-md">
+              <div class="row row-y-center grid align-items-center">
+                <div
+                  class="row-item icon icon-16 icon-direction-tiled mr-4 grid-item"
+                  style="top: 0"
+                ></div>
+                <span
+                  class="link row-item typography typography-caption typography-medium grey-800 min-w-128 grid-item"
+                  onclick="LAYOUT_openCitiesModal()"
+                >
+                  <span id="LAYOUT-header-current-city"></span>
+                  <span
+                    class="icon icon-chevron-down"
+                    style="font-size: 0.6em; font-weight: 700"
+                  ></span>
+                </span>
+              </div>
+            </div>
+
+            <div class="row-item grid-item">
+              <div class="row row-gutter-28 grid grid-gutter-28 grid-nowrap">
+                <div class="hidden-md row-item grid-item">
+                    <a href="/" class="typography typography-subheadline typography-medium grey-800">Клиентам</a>
+                </div>
+
+                <div class="hidden block-md row-item grid-item">
+                    <a href="/" class="typography typography-subheadline typography-medium grey-800 tag tag-s tag-violet">Клиентам</a>
+                </div>
+
+                <div class="row-item grid-item">
+                    <a id="LAYOUT-header-lkv-link" href="/" class="typography typography-subheadline grey-300">Врачам</a>
+                </div>
+
+                <div class="row-item grid-item">
+                  <a id="LAYOUT-header-b2b-link" href="/" class="typography typography-subheadline grey-300">Организациям</a>
+                </div>
+
+                <div class="row-item grid-item">
+                  <a href="https://fr.helix.ru/" class="typography typography-subheadline grey-300">Франчайзинг</a>
+                </div>
+
+                <div class="hidden-xs row-item grid-item">
+                  <div class="dropdown-container">
+                    <span class="dropdown-trigger typography typography-subheadline grey-300">
+                      О Компании
+                    </span>
+                    <div class="dropdown dropdown-menu">
+                        <a href="/site/page/107" class="dropdown-item">Контакты</a>
+                        <a href="/site/page/116" class="dropdown-item">Контроль качества</a>
+                        <a href="/site/page/46" class="dropdown-item">Лицензии и сертификаты</a>
+                        <a href="/publishing" class="dropdown-item">Пресса о нас</a>
+                        <a href="/job" class="dropdown-item">Вакансии</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="row-item typography typography-headline grey-700 grid-item hidden-lg"
+        >
+          <div class="row row-y-center grid align-items-center">
+            <div
+              class="row-item icon icon-phone icon-20 mr-4 grid-item"
+              style="top: 0"
+            ></div>
+            
+            <div
+              id="LAYOUT-header-company-phone-container"
+              style="display: none"
+              class="row-item grid-item"
+            >
+              <a
+                id="LAYOUT-header-company-phone"
+                href="tel:"
+              ></a>
+              &nbsp;
+            </div>
+
+            <a
+              data-desktop
+              class="row-item grid-item LAYOUT-header-federal-phone"
+              href="tel:"
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section bg-blue-light">
+    <div class="section-content">
+      <div
+        class="row row-nowrap row-gutter-24 row-y-center py-16 grid grid-gutter-24 align-items-center"
+      >
+        <div class="row-item grid-item hidden block-md">
+          <a href="/" class="icon icon-logo h-32 w-96"></a>
+        </div>
+        <div class="row-item grid-item hidden-md">
+          <a href="/" class="icon icon-logo h-44 w-144"></a>
+        </div>
+
+        <div class="row-item grid-item grid-grow hidden-xs grow">
+          <div class="relative">
+            <input
+              data-desktop
+              class="LAYOUT-search-input input input-search full-width" 
+              type="text"
+              value='' 
+              oninput="LAYOUT_search()"
+              autocomplete="off"
+              maxlength="120"
+              placeholder="Поиск по сайту" 
+            />
+            <div
+              data-desktop
+              class="LAYOUT-search-dropdown dropdown dropdown-scrollable full-width"
+              style="display: none"
+            ></div>
+          </div>
+        </div>
+
+        <div
+          class="row-item grid-item hidden block-md grid-xs-grow justify-content-sm-end"
+        >
+          <div
+            class="grid grid-gutter-12 grid-nowrap justify-content-end align-items-center"
+          >
+            <div class="grid-item">
+              <a
+                class="icon icon-direction-tiled icon-24"
+                onclick="LAYOUT_openCitiesModal()"
+              ></a>
+            </div>
+            <div class="grid-item">
+              <a
+                data-mobile
+                href="tel:"
+                class="icon icon-phone icon-24 LAYOUT-header-federal-phone"
+              ></a>
+            </div>
+            <div class="grid-item">
+              <a href="/preorder/step1" class="icon icon-cart icon-24">
+                <div
+                  data-mobile
+                  class="badge LAYOUT-header-cart-badge"
+                ></div>
+              </a>
+            </div>
+
+            <div class="grid-item ml-32">
+              <div
+                data-mobile
+                class="LAYOUT-header-lkk-link-container"
+                style="display: none"
+              >
+                <a
+                  data-mobile
+                  href="/"
+                  class="LAYOUT-header-lkk-link button button-primary button-s"
+                >
+                  Войти
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row-item grid-item hidden-md">
+          <div class="relative">
+            <button 
+              id="LAYOUT-results-dropdown-button" 
+              class="button button-subtle button-s"
+              onclick="LAYOUT_toggleResultsDropdown()"
+            >
+              Получить результат
+            </button>
+
+            <div
+              id="LAYOUT-results-dropdown"
+              class="dropdown w-320"
+              style="display: none"
+            ></div>
+          </div>
+        </div>
+
+        <div class="row-item grid-item hidden-md">
+          <div
+            data-desktop
+            class="LAYOUT-header-lkk-link-container"
+            style="display: none"
+          >
+            <a
+              href="/"
+              class="LAYOUT-header-lkk-link button button-primary button-s"
+            >
+              Личный кабинет
+            </a>
+          </div>
+        </div>
+
+        <div class="row-item grid-item hidden-md">
+          <a href="/preorder/step1" class="icon icon-cart icon-32">
+            <div data-desktop class="LAYOUT-header-cart-badge badge"></div>
+          </a>
+        </div>
+
+        <div
+          id="LAYOUT-profile-info-dropdown-container"
+          class="row-item relative grid-item hidden-md"
+          style="display: none"
+        >
+          <div class="relative">
+            <span
+              id="LAYOUT-profile-info-dropdown-button"
+              class="link typography green-medium"
+              onclick="LAYOUT_toggleProfileInfoDropdown()"
+            >
+              <span id="LAYOUT-profile-info-dropdown-button-name"></span>
+              &nbsp;
+              <span class="icon icon-chevron-down"></span>
+            </span>
+
+            <div
+              id="LAYOUT-profile-info-dropdown"
+              class="dropdown p-12 rounded-s dropdown-anchor-right w-320"
+              style="display: none; padding: 12px !important; border-radius: 12px !important;"
+            ></div>
+          </div>
+        </div>
+
+        <div class="row-item grid-item hidden block-xs grid-12">
+          <div class="relative">
+            <input
+              data-mobile
+              class="LAYOUT-search-input input input-search full-width"
+              type="text"
+              value=""
+              oninput="LAYOUT_search()"
+              autocomplete="off"
+              maxlength="120"
+              placeholder="Поиск по сайту"
+            />
+
+            <div
+              data-mobile
+              class="LAYOUT-search-dropdown dropdown dropdown-scrollable full-width"
+              style="display: none"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section section-border-bottom hidden-md">
+  <div class="section-content">
+    <div
+      class="row row-space-between row-nowrap py-20 grid justify-content-between"
+    >
+        <div class="row-item grid-item">
+          <a href="/catalog" data-test-id="header-nav-catalog" class="typography typography-headline typography-medium grey-800">Сдать анализы</a>
+        </div>
+        <div class="row-item grid-item">
+          <a href="/ms" data-test-id="header-nav-ms" class="typography typography-headline typography-medium grey-800">Выезд на дом</a>
+        </div>
+        <div class="row-item grid-item">
+          <a href="/promotions" data-test-id="header-nav-promo" class="typography typography-headline typography-medium grey-800">Скидки и акции</a>
+        </div>
+        <div class="row-item grid-item">
+          <a href="/centers" data-test-id="header-nav-centers" class="typography typography-headline typography-medium grey-800">Адреса Центров Хеликс</a>
+        </div>
+        <div class="row-item grid-item">
+          <a href="/kb" data-test-id="header-nav-kb" class="typography typography-headline typography-medium grey-800">Helixbook</a>
+        </div>
+      <div class="row-item grid-item">
+        <div data-test-id="header-nav-info" class="dropdown-container">
+          <span class="dropdown-trigger typography typography-headline typography-medium grey-800">
+            Справочная информация
+          </span>
+          <div class="dropdown dropdown-menu">
+              <a data-test-id="header-nav-info-howtoget" href="/site/page/86" class="dropdown-item">Как получить результат</a>
+              <a data-test-id="header-nav-info-preorder" href="/site/page/53" class="dropdown-item">Предварительный заказ</a>
+              <a data-test-id="header-nav-info-lkk" href="/site/page/65" class="dropdown-item">О Личном кабинете</a>
+              <a data-test-id="header-nav-info-prepare" href="/site/page/59" class="dropdown-item">Подготовка к анализам</a>
+              <a data-test-id="header-nav-info-dms" href="/site/page/52" class="dropdown-item">Прием по ДМС</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+        <!-- breadcrums -->
+            <div class="section">
+                <div class="section-content">
+
+<div class='breadcrumbs'><a class='breadcrumbs-item' href='/'>Главная</a><a class='breadcrumbs-item' href='/promotions'>Скидки и акции</a><span class='breadcrumbs-item'>Проверка женского здоровья за 2990 руб.</span></div>
+                </div>
+            </div>
+        <div class="section">
+    <div class="section-content">
+        <div class="row row-gutter-72 grid grid-gutter-72">
+            <div class="row-item row-md-9 grid-item grid-9 grid-sm-12">
+                <div class="pageheader">
+                    <div class="hidden block-md mb-16">
+                        <div class="icon icon-arrow-left icon-20 return-to-promotions"></div>
+                   </div>
+                    <div class="pageheader-title">
+                        <div class="pageheader-back-button return-to-promotions"></div>
+                        Проверка женского здоровья за 2990 руб.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section section-has-sider">
+    <div class="section-content section-sider-mobile-top grid">
+        <div class="section-main">
+            <div class="html-markup html-markup-l" style="overflow: auto">
+                <p><strong>Пройдите комплексную проверку женского здоровья в Лабораторной службе Хеликс по специальной цене.</strong></p>
+<p>По данным ВОЗ, с гинекологическими проблемами сталкиваются от 30 до 50% женщин. Чтобы оставаться уверенными в своем здоровье и выявлять даже незначительные изменения на ранних стадиях, женщинам с 18 лет рекомендуется ежегодно посещать гинеколога, регулярно проходить осмотр и лабораторное обследование.</p>
+<p><strong>Воспользуйтесь выгодным предложением в Хеликс – пройдите скрининг для женщин за 2990 руб. (стоимость без акции — 4110 руб.)</strong></p>
+<p>В комплекс входят:</p>
+<p><a href="https://helix.ru/catalog/item/90-040" target="_blank">[90-040] Прием врача – акушера-гинеколога первичный</a></p>
+<p><a href="https://helix.ru/catalog/item/90-064" target="_blank">[90-064] Ультразвуковое исследование матки и придатков (трансабдоминально/интравагинально)</a></p>
+<p><a href="https://helix.ru/catalog/item/02-003" target="_blank">[02-003] Микроскопическое исследование отделяемого мочеполовых органов женщин (микрофлора), 3 локализации</a></p>
+<p><strong>Акция действует с 22 июня по 31 июля 2022 года.</strong></p>
+<p>Услуги по взятию биоматериала оплачиваются дополнительно.</p>
+<p>Запишитесь на обследование по телефону Контакт-центра: +7 800 700 03 03 или +7 (812) 309 12 21.</p>
+<p><strong>Акция действует в Центрах:</strong> <a href="https://helix.ru/center/33268" target="_blank">ДЦ На Техноложке</a>, <a href="https://helix.ru/center/33269" target="_blank">ДЦ Полюстровский</a>, <a href="https://helix.ru/center/33267" target="_blank">ДЦ Пискаревский</a>.</p>
+<p>Предложение не суммируется со скидками по другим акциям, скидкой по Карте клиента Хеликс. Подробную информацию об акции и услугах Лабораторной службы Хеликс уточняйте по телефону Контакт-центра: +7 800 700 03 03 (звонки бесплатны для любого региона РФ).</p>
+            </div>
+        </div>
+            <div class="section-sider grid-item grid-3 grid-lg-4 grid-sm-6 grid-xs-12">
+                <div class="affix affix-top-40">
+                    <div class="card-decoration-container">
+                        <div class="tag tag-violet typography typography-body">
+                            Акция&nbsp;
+                            <span class="typography-bold">%</span>
+                        </div>
+                    </div>
+                    <div class="card card-m card-border-1 full-width">
+                        <div class="card-body">
+                            <div class="typography typography-bold typography-body typography-paragraph" style="margin-top: 16px">Акция действует:</div>
+                            <div class="row row-gutter-8 grid grid-gutter-8">
+                                <div class="row-item grid-item">
+                                    <div class="icon icon-20 icon-calendar-dates"></div>
+                                </div>
+                                <div class="row-item grid-item">
+                                        <div class="typography typography-body">
+                                            с 22 июня 2022 года
+                                        </div>
+                                                                            <div class="typography typography-body">
+                                            по 31 июля 2022 года
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+
+<script>
+    $(".return-to-promotions").on('click', function () {
+        window.location = "/promotions";
+    });
+</script>
+
+<style>
+     @media screen and (max-width: 768px) {
+         .section-sider {
+             margin-top: 16px;
+         }
+     }
+</style>
+
+
+<div class="section bg-blue-light mt-64 footer-bottom-navigation">
+  <div class="section-content py-40">
+    <div class="col grid grid-column">
+      <div class="col-item grid-item">
+        <div class="row grid justify-content-between">
+          <div class="row-item row-md-3 grid-item grid-3 grid-lg-4 grid-xs-12">
+            <div
+              class="col col-gutter-40 grid grid-column grid-gutter-40 align-items-xs-center typography typography-align-xs-center"
+            >
+              <div class="col-item grid-item">
+                <a href="/" class="icon icon-logo h-44 w-144"></a>
+              </div>
+
+              <div class="col-item grid-item">
+                <div class="typography typography-body typography-paragraph grey-800">Телефон</div>
+
+                <a id="LAYOUT-footer-company-phone" style="display: block" class="typography typography-headline mb-12 typography-bold grey-800" href="tel:">
+                </a>
+
+                <a id="LAYOUT-footer-federal-phone" style="display: block" class="typography typography-headline typography-bold grey-800" href="tel:">
+                </a>
+              </div>
+
+              <div class="col-item grid-item">
+                <div
+                  class="typography typography-body typography-paragraph grey-800"
+                >
+                  Социальные сети
+                </div>
+
+                <div class="row row-gutter-12 grid grid-gutter-12">
+                  <div class="row-item grid-item">
+                    <a
+                      href="https://vk.com/helix_lab"
+                      target="_blank"
+                      class="icon icon-vk w-40 h-40"
+                    ></a>
+                  </div>
+                  <div class="row-item grid-item">
+                    <a
+                      href="https://t.me/helixfamily"
+                      target="_blank"
+                      class="icon icon-telegram w-40 h-40"
+                    ></a>
+                  </div>
+                  <div class="row-item grid-item">
+                    <a
+                      href="https://zen.yandex.ru/id/622f2b11c658c87624297943"
+                      target="_blank"
+                      class="icon icon-dzen w-40 h-40"
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="row-item row-md-9 grid-item grid-item grid-9 grid-lg-8 hidden-xs"
+          >
+            <div
+              class="row row-gutter-24 row-space-between grid grid-gutter-24"
+            >
+                <div class="row-item grid-item grid-3 grid-lg-6">
+                  <div class="typography typography-body grey-800 typography-bold typography-paragraph">Услуги клиентам</div>
+                  <div class="col col-gutter-8 pt-4 grid grid-column grid-gutter-8">
+                      <div class="col-item grid-item">
+                        <a href="/centers" class="typography typography-body black">Адреса Центров Хеликс</a>
+                      </div>
+                      <div class="col-item grid-item">
+                        <a href="/catalog" class="typography typography-body black">Сдать анализы</a>
+                      </div>
+                      <div class="col-item grid-item">
+                        <a href="/ms" class="typography typography-body black">Выезд на дом и в офис</a>
+                      </div>
+                      <div class="col-item grid-item">
+                        <a href="https://helzy.ru" class="typography typography-body black">Проверить симптомы</a>
+                      </div>
+                      <div class="col-item grid-item">
+                        <a href="/site/page/52" class="typography typography-body black">Прием по ДМС</a>
+                      </div>
+                  </div>
+                </div>
+                <div class="row-item grid-item grid-3 grid-lg-6">
+                  <div class="typography typography-body grey-800 typography-bold typography-paragraph">Справочная информация</div>
+                  <div class="col col-gutter-8 pt-4 grid grid-column grid-gutter-8">
+                      <div class="col-item grid-item">
+                        <a href="/site/page/59" class="typography typography-body black">Подготовка к анализам</a>
+                      </div>
+                      <div class="col-item grid-item">
+                        <a href="/site/page/86" class="typography typography-body black">Как получить результат</a>
+                      </div>
+                      <div class="col-item grid-item">
+                        <a href="/kb" class="typography typography-body black">Helixbook</a>
+                      </div>
+                      <div class="col-item grid-item">
+                        <a href="/site/page/65" class="typography typography-body black">О Личном кабинете</a>
+                      </div>
+                  </div>
+                </div>
+                <div class="row-item grid-item grid-3 grid-lg-6">
+                  <div class="typography typography-body grey-800 typography-bold typography-paragraph">Скидки и акции</div>
+                  <div class="col col-gutter-8 pt-4 grid grid-column grid-gutter-8">
+                      <div class="col-item grid-item">
+                        <a href="/promotions" class="typography typography-body black">Скидки и акции</a>
+                      </div>
+                      <div class="col-item grid-item">
+                        <a href="/loyalty" class="typography typography-body black">Программа лояльности</a>
+                      </div>
+                  </div>
+                </div>
+                <div class="row-item grid-item grid-3 grid-lg-6">
+                  <div class="typography typography-body grey-800 typography-bold typography-paragraph">О Компании</div>
+                  <div class="col col-gutter-8 pt-4 grid grid-column grid-gutter-8">
+                      <div class="col-item grid-item">
+                        <a href="/site/page/46" class="typography typography-body black">Лицензии и сертификаты</a>
+                      </div>
+                      <div class="col-item grid-item">
+                        <a href="/site/page/116" class="typography typography-body black">Контроль качества</a>
+                      </div>
+                      <div class="col-item grid-item">
+                        <a href="/publishing" class="typography typography-body black">Пресса о нас</a>
+                      </div>
+                      <div class="col-item grid-item">
+                        <a href="/site/page/107" class="typography typography-body black">Контакты</a>
+                      </div>
+                      <div class="col-item grid-item">
+                        <a href="/job" class="typography typography-body black">Вакансии</a>
+                      </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-item grid-item my-16">
+        <div class="divider"></div>
+      </div>
+
+      <div class="col-item grid-item">
+        <div class="row row-gutter-28 grid grid-gutter-28">
+          <div
+            class="row-item grow grid-item grid-grow grid-sm-nogrow grid-sm-12 hidden-sm"
+          >
+            <div class="typography typography-body grey-500">
+              2016-<span class="LAYOUT-footer-year"></span>&nbsp;&#169;&nbsp;Хеликс
+            </div>
+          </div>
+
+          <div class="row-item grid-item grid-sm-12">
+            <a href="/site/page/103" class="typography typography-body grey-500"
+              >СОУТ</a
+            >
+          </div>
+
+          <div class="row-item grid-item grid-sm-12">
+            <a href="/site/page/57" class="typography typography-body grey-500"
+              >Правовая информация</a
+            >
+          </div>
+
+          <div class="row-item grid-item grid-sm-12">
+            <a
+              href="/Upload/Documents/data-processing-policy.pdf"
+              class="typography typography-body grey-500"
+              >Обработка персональных данных</a
+            >
+          </div>
+
+          <div class="grid-item grid-sm-12 hidden block-sm">
+            <div class="typography typography-body grey-500">
+              2016-<span class="LAYOUT-footer-year"></span>&nbsp;&#169;&nbsp;Хеликс
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+        <div id="LAYOUT-navigation-wrapper"></div>
+    </div>
+    <script src="//yandex.st/share/share.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://www.google.com/recaptcha/api.js?hl=ru&render=explicit" async defer></script>
+</body>
+</html>
