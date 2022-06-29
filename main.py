@@ -62,10 +62,10 @@ for name, url in all_categories.items():
             it = item.find_all('p')
             for p in it[2:-2]:
                 total.append(p.text)
-        dict_all['отделения']= total
+        dict_all['отделения'] = '\n,'.join(total)
         dict_item.append(dict_all)
 
-        with open(f'data/out{count}.csv', 'a', encoding='utf-8', newline="") as out:
+        with open(f'data/out{count}.csv', 'w', encoding='utf-8', newline="") as out:
             field_names = ['категория', 'отделения']
             writer = csv.DictWriter(out, field_names)
             writer.writeheader()
